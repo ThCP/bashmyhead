@@ -1,0 +1,5 @@
+find / -name "core" 2> errors.log
+find / -name "conf" -printf "%p %s\n"
+find /usr -perm /u=rx,g=rx,o=rx
+find /home/riccardo -atime -7
+

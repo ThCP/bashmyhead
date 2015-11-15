@@ -1,0 +1,2 @@
+find /home/riccardo/ -path "*backup" | xargs mv -t folder_backups
+

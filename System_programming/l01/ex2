@@ -1,0 +1,4 @@
+umask 000
+touch x
+umask 066
+touch y
