@@ -21,4 +21,8 @@ find /home/riccardo/ -path "*backup" | xargs mv -t folder_backups
 # with “a” and finishes with “o”.
 find / -size +2M -or -name "a.*o"
 
+# Find all executable files in the current directory, except the crossable 
+# directories then copy them to the bin folder in the current directory. The
+# bin folder must already be present. 
+find  . -maxdepth 1 -executable -not -type d -exec cp -t ./bin/ \{} \;
 
